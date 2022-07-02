@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 /** 
 * main - prints numbers
 * Description: prints all possible combinations of single-digit numbers
@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-int i ='0';
+int i = '0';
 while (i <= '9')
 {
 putchar(i);
