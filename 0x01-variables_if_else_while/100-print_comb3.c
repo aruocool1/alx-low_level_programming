@@ -6,28 +6,30 @@
 */
 int main(void)
 {
-int number;
-int number1;
-number= 48;
-while (number <= 57)
+int a = '0';
+int b = '9';
+while (a <= '9')
 {
-number1 = 0;
-while (number1 <= 57)
+while (b <= '9')
 {
-if (number <number1)
+if (!(a > b || a == b))
 {
-putchar(number);
-putchar(number1);
-if (number < 56)
+putchar(a);
+putchar(b);
+if (a == '8' && b == '9')
+{
+putchar('\n');
+}
+else
 {
 putchar(',');
-purchar(' ');
+putchar(' ');
 }
 }
-number1++;
+b++;
 }
-number++;
+b = '0';
+a++;
 }
-putchar('\n');
 return (0);
 }
