@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - prints combinations
+*  main - prints combinations
 * Description: prints all possible different combinations of two digits
 * Return: 0
 */
@@ -12,7 +12,7 @@ while (a <= '9')
 {
 while (b <= '9')
 {
-if (!(a > b || a == b))
+if ((a > b || a == b))
 {
 putchar(a);
 putchar(b);
