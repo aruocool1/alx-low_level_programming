@@ -14,7 +14,7 @@ while (number <= 57)
 number1 = 0;
 while (number1 <= 57)
 {
-if (number < number1)
+if (number <number1)
 {
 putchar(number);
 putchar(number1);
