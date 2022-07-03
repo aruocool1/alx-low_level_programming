@@ -1,35 +1,25 @@
 #include <stdio.h>
 /**
-*  main - prints combinations
+* main - prints combinations
 * Description: prints all possible different combinations of two digits
 * Return: 0
 */
 int main(void)
 {
-int a = '0';
-int b = '9';
-while (a <= '9')
+int digit1, digit 2;
+for (digit = 0; digit1 < 9; digit1++)
 {
-while (b <= '9')
+for (digit2 = digit1 + 1; digit 2 < 10; digit2++)
 {
-if ((a > b || a == b))
-{
-putchar(a);
-putchar(b);
-if (a == '8' && b == '9')
-{
-putchar('\n');
-}
-else
-{
+putchar ((digit1 % 10) + '0');
+putchar ((digit2 % 10) + '0');
+
+if (digit1 ==8 && digit2 == 9)
+	continue;
 putchar(',');
-putchar(' ');
+puthcar(' ');
 }
 }
-b++;
-}
-b = '0';
-a++;
-}
+putchar('\n');
 return (0);
 }
