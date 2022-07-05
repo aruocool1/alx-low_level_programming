@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
-* main - prints numbers
-* Deascription: prints the first 98 fibonacci numbers
+* main - prints the first 50 fibonacci numbers
 * Return: 0
 */
 int main(void)
 {
 int i=0
 unsigned long long  a=1, b=2, next;
-printf("%lu%lu, ", a, b);
+printf("%lu%lu, %llu, ", a, b);
 i=2;
 while (i < 98)
 {
@@ -19,8 +18,8 @@ b = next;
 printf("%llu", next);
 if (i > 96)
 {
-	printf("\n");
-	break;
+printf("\n");
+break;
 }
 printf(", ");
 i++;
