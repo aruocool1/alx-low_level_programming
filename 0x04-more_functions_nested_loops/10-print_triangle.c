@@ -1,15 +1,27 @@
 #include "main.h"
 
 /**
-* main - check the code
-* Return: Always 0.
+* print_triangle - draws a triangle
+* @size: the height of the triangle
 */
 
-int main(void)
+void print_triangle(int size)
 {
-print_triangle(2);
-print_triangle(10);
-print_triangle(1);
-print_triangle(0);
-return (0);
+int a, b;
+if (size > 0)
+{
+for (a = 1; a <= size; a++)
+{
+for (b = size; b >= 1; b--)
+{
+if (a < b)
+_putchar(' ');
+else
+_putchar ('#');
+}			
+_putchar('\n');
+}	
+}
+else
+_putchar('\n');
 }
