@@ -3,12 +3,15 @@
 #include <stdlib.h>
 #include <limits.h>
 
+
 /**
-* main - check the code
-* Return: Always 0.
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 
 int main(void)
+
 {
 char *c;
 int *i;
@@ -27,5 +30,7 @@ free(c);
 free(i);
 free(f);
 free(d);
+
 return (0);
+
 }
